@@ -1,0 +1,9 @@
+{
+  "name": "MESP-RDC HR PRO ",
+  "description": "Plateforme centralisée de gestion RH, paie stratégique (CDF/USD), communication chiffrée AES-256 et tracking GPRS/Satellite pour la Mutuelle de Santé des Enseignants.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "geolocation"
+  ]
+}
