@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-/* Fix: Correctly import HashRouter, Routes, Route, and Navigate from react-router-dom */
 import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Dashboard } from './pages/Dashboard';
@@ -18,6 +17,7 @@ import { Expenses } from './pages/Expenses';
 import { Surveys } from './pages/Surveys';
 import { Roles } from './pages/Roles';
 import { Medical } from './pages/Medical';
+import { Informations } from './pages/Informations';  // ✅ NOUVEAU IMPORT
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { AILab } from './pages/AILab';
@@ -53,6 +53,10 @@ const AppContent: React.FC = () => {
                 <Route path="/" element={<Dashboard currentUser={currentUser} />} />
                 <Route path="/ai-lab" element={<AILab />} />
                 <Route path="/medical" element={<Medical />} />
+                
+                {/* ✅ NOUVELLE ROUTE AJOUTÉE */}
+                <Route path="/informations" element={<Informations />} />
+                
                 <Route path="/services" element={<Services />} />
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/leaves" element={<Leaves />} />
